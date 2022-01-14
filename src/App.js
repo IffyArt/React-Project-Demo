@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const TodoList = ({ todoList }) => {
   return (
@@ -13,6 +13,13 @@ const TodoList = ({ todoList }) => {
 const App = () => {
   const [text, setText] = useState('');
   const [todoList, setTodoList] = useState([]);
+
+  useEffect(() => {
+    console.log('show');
+    return () => {
+      console.log('clear');
+    };
+  }, [text]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
