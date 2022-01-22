@@ -1,8 +1,14 @@
+import NativeForm from './components/NativeForm';
+import BasicForm from './components/BasicForm';
+import LoginForm from './components/LoginForm';
+
 const App = () => {
   return (
-    <div>
-      <h3>Main branch</h3>
-    </div>
+    <>
+      <NativeForm />
+      <BasicForm />
+      <LoginForm />
+    </>
   );
 };
 
