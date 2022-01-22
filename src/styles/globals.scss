@@ -1,0 +1,19 @@
+@use "sass:math";
+@import 'base/reset';
+
+@import 'variable/color';
+@import 'variable/layout';
+
+@import 'mixin/RWD';
+@import 'mixin/flex-element';
+@import 'mixin/pseudo-element';
+@import 'mixin/layout-element';
+
+@import 'layout/body';
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/container';
+@import 'layout/footer';
+@import 'layout/not-found-page';
+
+@import 'components/news-list'

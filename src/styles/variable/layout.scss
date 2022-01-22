@@ -1,0 +1,27 @@
+$max-width_container:1200px;
+
+$width_container--big:90%;
+$width_container:85%;
+$width_container--small:75%;
+
+$width_max-layout:410px;
+
+$height_banner:520px;
+$height_navbar:80px;
+$height_footer:80px;
+
+$layout-size_big:60px;
+$layout-size_base:40px;
+$layout-size_small:20px;
+
+$row-size_col-margin-big:25px;
+$row-size_col-margin:15px;
+$row-size_col-margin-small:9px;
+
+$border-radius_layout:5px;
+
+$z-index_background:-1;
+$z-index_basic:10;
+$z-index_operate:100;
+$z-index_overlay:1000;
+$padding_basic-layout:$row-size_col-margin-big $layout-size_base;

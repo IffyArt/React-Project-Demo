@@ -1,0 +1,8 @@
+.footer {
+  margin-top: $layout-size_base;
+  height: $height_footer;
+  border-top: $color_line solid 1px;
+  background-color: $color_white;
+
+  @extend %flex-center;
+}

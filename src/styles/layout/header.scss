@@ -1,0 +1,21 @@
+.header {
+  padding: $height_navbar 0;
+  height: $height_banner;
+  background-color: $color_accent--dark;
+
+  @extend %flex-center;
+
+  &__container {
+    flex-direction: column;
+    color: $color_white;
+    text-align: center;
+
+    @extend %flex-center;
+    @extend %layout_container;
+
+    >h2 {
+      margin-bottom: $layout-size_small;
+      font-size: 2rem;
+    }
+  }
+}

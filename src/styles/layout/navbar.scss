@@ -1,0 +1,40 @@
+.navbar {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: $height_navbar;
+  background-color: $color_white;
+
+  &__title a {
+    color: $color_accent;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__container {
+    align-items: center;
+
+    @extend %flex-row-between;
+    @extend %layout_container;
+  }
+
+  &__links {
+    @extend %flex-row;
+
+    >li {
+
+      >a {
+        padding: 10px;
+        color: $color_accent;
+      }
+
+      &:nth-last-child(1) {
+        >a {
+          border: $color_accent solid 2px;
+          border-radius: $border-radius_layout;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+%layout_container {
+  margin: auto;
+  max-width: $max-width_container;
+  width: $width_container--small;
+
+  @include pc-width() {
+    width: $width_container;
+  }
+
+  @include pad-width() {
+    width: $width_container;
+  }
+
+  @include phone-width() {
+    width: $width_container--big;
+  }
+}
+
+%layout_list {
+  overflow: hidden;
+  margin: -$row-size_col-margin;
+
+  @extend %flex-wrap;
+
+  li {
+    flex: 1;
+    margin: $row-size_col-margin;
+    min-width: 220px;
+  }
+}
+
+%layout_full-layout {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+%layout_full-absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin round($size) {
+  width: $size;
+  height: $size;
+  border-radius: $size;
+}
