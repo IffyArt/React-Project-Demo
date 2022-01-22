@@ -1,0 +1,38 @@
+@import 'variable/color.scss';
+@import 'mixin/flex-element.scss';
+@import 'mixin/RWD.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// 常用引入
+body {
+  min-height: 100vh;
+  background-color: $color_primary;
+  color: $color_text-color;
+
+  @extend %flex-center;
+
+  @include phone-width {
+    background-color: $color_accent;
+  }
+}
+
+// 迴圈函示 https://sass-lang.com/documentation/at-rules/control
+$titles: ('h1': "2rem", 'h2': "1.75rem", 'h3': "1.5rem");
+
+@each $tag,
+$value in $titles {
+  #{$tag} {
+    color: white;
+    font-size: $value;
+  }
+}
+
+@for $i from 1 through 3 {
+  h#{$i} {
+    background-color: lighten($color_accent, $i * 10%);
+  }
+}
