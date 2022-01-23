@@ -1,17 +1,14 @@
-import { Link } from 'react-router-dom';
+import NativeForm from '../components/NativeForm';
+import BasicForm from '../components/BasicForm';
 
 function AboutPage() {
   return (
     <>
       <main>
         <h2>Welcome to the AboutPage!</h2>
-        <p>You can do this, I believe in you.</p>
+        {/* <NativeForm /> */}
+        <BasicForm />
       </main>
-      <nav>
-        <Link to='/about' className='iii'>
-          About
-        </Link>
-      </nav>
     </>
   );
 }
