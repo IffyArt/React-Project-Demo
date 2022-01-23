@@ -4,8 +4,10 @@ function HomePage() {
   return (
     <>
       <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
+        <h1>Main branch h1</h1>
+        <h2>Main branch h2</h2>
+        <h3>Main branch h3</h3>
+        <a href='https://sass-lang.com/'>SASS 官網</a>
       </main>
       <nav>
         <Link to='/about' className='iii'>
